@@ -4,7 +4,7 @@ Creator:	....
 Date:		01.06.2014
 Version:	b1.0
 Language:	Python
-Platforms:	Slicer 4 (Windows, Mac OS X, Linux)
+Platforms:	Slicer 4 (MacOS)
 =====================================================================
 
 This Module allows users to query fiber tracks with White Matter Query Language (WMQL) 
@@ -20,18 +20,11 @@ introduced by Demain Wasssermann et. al. in MICCAI 2013.
   >cd slicer_tract_querier
 
 This package contains three dependent packages:
-numpy.MacOS.64
 nibabel
 bz2.so
 
-3) Remove numpy1.4 and Install numpy1.7
-Note: Slicer4 comes with numpy1.4, but our module needs numpy1.7
-locate your numpy1.4 path, usually it is '/Applications/Slicer.app/Contents/lib/Python/lib/python2.7/site-packages/numpy'
-  >rm -rf /Applications/Slicer.app/Contents/lib/Python/lib/python2.7/site-packages/numpy
-  >cp -r numpy.MacOS.64 /Applications/Slicer.app/Contents/lib/Python/lib/python2.7/site-packages/numpy
 
-
-4) Load TractQuerier module into Slicer
+3) Load TractQuerier module into Slicer
 
    Start Slicer
 
